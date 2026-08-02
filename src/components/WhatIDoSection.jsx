@@ -1,10 +1,13 @@
 import Arrowb from '../assets/arrow-b.svg'
+import Pen from '../assets/pen.png'
+import Eye from '../assets/eye.png' 
+import Shine from '../assets/shine.png' 
 
 export default function WhatIDoSection() {
     return (
-        <section className="w-full pb-32 pt-8">
+        <section className="w-full pb-24 pt-8"> 
 
-            <div className="relative mb-24 ml-10">
+            <div className="relative mb-16 ml-10">
                 <span
                     className="bg-[#ffcbf2] px-2 py-0.5 text-[20px] text-black inline-block"
                     style={{ fontFamily: '"Handlee", cursive' }}
@@ -13,53 +16,67 @@ export default function WhatIDoSection() {
                 </span>
 
                 <div className="absolute top-[32px] left-[6px]">
-                    <img src={Arrowb} alt="Arrowb " />
+                    <img src={Arrowb} alt="Arrowb" />
                 </div>
             </div>
 
-            <div className="flex flex-col md:flex-row items-center justify-start ml-[-12px]">
+            {/* پدینگ‌ها متعادل شد: 
+                lg:pl-24 (سمت چپ) برای جا دادن گوشه کارت زرد
+                lg:pr-32 (سمت راست) برای جا دادن لیبل کارت صورتی
+                py-10 برای فضای بالا و پایین چرخش‌ها
+            */}
+            <div className="flex flex-col lg:flex-row items-center justify-center gap-4 px-4 py-10 lg:pl-24 lg:pr-32">
 
+                {/* کارت زرد */}
                 <div
-                    className="relative  w-[377px] h-[452px] bg-[#fce577] border-[6px] border-[#EECD56] rounded shadow-sm flex flex-col justify-end p-8 rotate-[-3deg] hover:rotate-0 transition-transform duration-300 z-30"
+                    className="relative shrink-0 w-[377px] h-[452px] bg-[#fce577] border-[3px] border-[#EECD56] rounded-xl flex flex-col justify-end p-10 rotate-[-6deg] hover:rotate-0 transition-transform duration-300 z-10"
                     style={{ fontFamily: '"Inter", sans-serif' }}
                 >
+                    {/* لیبل FigJam */}
                     <div
-                        className="absolute top-12 right-3 bg-[#a3e2ff] px-2 py-0.5 text-black border border-transparent z-40"
-                        style={{ fontFamily: '"Handlee", cursive', fontSize: '16px' }}
+                        className="absolute top-[60px] right-[24px] bg-[#a3e2ff] px-3 py-1 text-black z-40"
+                        style={{ fontFamily: '"Handlee", cursive', fontSize: '18px' }}
                     >
                         FigJam
                     </div>
-                    <h3 className="text-[22px] font-medium leading-[1.3] text-black">
+                    <img src={Pen} alt="Pen Icon" className="w-[50px] h-[50px] object-contain mb-6" />
+                    <h3 className="text-[32px] font-medium leading-[1.2] tracking-tight text-black">
                         User Research<br />Design
                     </h3>
                 </div>
 
+                {/* کارت آبی */}
                 <div
-                    className="relative  w-[377px] h-[452px] bg-[#87deff] border-[6px] border-[#5AB5E8] rounded shadow-sm flex flex-col justify-end p-8 rotate-[2deg] hover:rotate-0 transition-transform duration-300 z-20 md:ml-6 mt-4 md:mt-0"
+                    className="relative shrink-0 w-[377px] h-[452px] bg-[#87deff] border-[3px] border-[#5AB5E8] rounded-xl flex flex-col justify-end p-10 rotate-[2deg] hover:rotate-0 transition-transform duration-300 z-30"
                     style={{ fontFamily: '"Inter", sans-serif' }}
                 >
+                    {/* لیبل Figma */}
                     <div
-                        className="absolute -top-3 right-6 bg-[#ffcbf2] px-2 py-0.5 text-black border border-transparent z-40"
-                        style={{ fontFamily: '"Handlee", cursive', fontSize: '16px' }}
+                        className="absolute -top-[14px] right-[40px] bg-[#ffcbf2] px-3 py-1 text-black z-40"
+                        style={{ fontFamily: '"Handlee", cursive', fontSize: '18px' }}
                     >
                         Figma
                     </div>
-                    <h3 className="text-[22px] font-medium leading-[1.3] text-black">
+                    <img src={Eye} alt="Eye Icon" className="w-[50px] h-[50px] object-contain mb-6" />
+                    <h3 className="text-[32px] font-medium leading-[1.2] tracking-tight text-black">
                         UI & Product<br />Design
                     </h3>
                 </div>
 
+                {/* کارت صورتی */}
                 <div
-                    className="relative w-[377px] h-[452px] bg-[#ffbbf0] border-[6px] border-[#F384D4] rounded shadow-sm flex flex-col justify-end p-8 rotate-[-2deg] hover:rotate-0 transition-transform duration-300 z-10 md:ml-6 mt-4 md:mt-0"
+                    className="relative shrink-0 w-[377px] h-[452px] bg-[#ffbbf0] border-[3px] border-[#F384D4] rounded-xl flex flex-col justify-end p-10 rotate-[5deg] hover:rotate-0 transition-transform duration-300 z-20"
                     style={{ fontFamily: '"Inter", sans-serif' }}
                 >
+                    {/* لیبل Figma Prototype */}
                     <div
-                        className="absolute top-16 -right-6 bg-[#fce577] px-2 py-0.5 text-black border border-transparent z-40"
-                        style={{ fontFamily: '"Handlee", cursive', fontSize: '16px' }}
+                        className="absolute top-[100px] -right-[60px] bg-[#fce577] px-3 py-1 text-black z-40"
+                        style={{ fontFamily: '"Handlee", cursive', fontSize: '18px' }}
                     >
                         Figma Prototype
                     </div>
-                    <h3 className="text-[22px] font-medium leading-[1.3] text-black">
+                    <img src={Shine} alt="Shine Icon" className="w-[50px] h-[50px] object-contain mb-6" />
+                    <h3 className="text-[32px] font-medium leading-[1.2] tracking-tight text-black">
                         Prototyping &<br />Testing
                     </h3>
                 </div>

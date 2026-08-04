@@ -20,12 +20,12 @@ export default function WhatIDoSection() {
                 </div>
             </div>
 
-            {/* پدینگ چپ/راست فقط تو دسکتاپ اعمال می‌شه، تو موبایل px-4 ساده */}
-            <div className="flex flex-col lg:flex-row items-center justify-center gap-4 px-4 py-10 lg:pl-24 lg:pr-32">
+            {/* پدینگ کناری تو موبایل زیاد شد تا فضای چرخش جذب بشه */}
+            <div className="flex flex-col lg:flex-row items-center justify-center gap-4 px-8 sm:px-10 py-10 lg:px-0 lg:pl-24 lg:pr-32">
 
                 {/* کارت زرد */}
                 <div
-                    className="relative shrink-0 w-full max-w-[377px] h-[380px] sm:h-[452px] bg-[#fce577] border-[3px] border-[#EECD56] rounded-xl flex flex-col justify-end p-6 sm:p-10 rotate-0 lg:rotate-[-6deg] hover:rotate-0 transition-transform duration-300 z-10"
+                    className="relative shrink-0 w-full max-w-[377px] h-[380px] sm:h-[452px] bg-[#fce577] border-[3px] border-[#EECD56] rounded-xl flex flex-col justify-end p-6 sm:p-10 rotate-[-2deg] lg:rotate-[-6deg] hover:rotate-0 transition-transform duration-300 z-10"
                     style={{ fontFamily: '"Inter", sans-serif' }}
                 >
                     {/* لیبل FigJam */}
@@ -43,7 +43,7 @@ export default function WhatIDoSection() {
 
                 {/* کارت آبی */}
                 <div
-                    className="relative shrink-0 w-full max-w-[377px] h-[380px] sm:h-[452px] bg-[#87deff] border-[3px] border-[#5AB5E8] rounded-xl flex flex-col justify-end p-6 sm:p-10 rotate-0 lg:rotate-[2deg] hover:rotate-0 transition-transform duration-300 z-30"
+                    className="relative shrink-0 w-full max-w-[377px] h-[380px] sm:h-[452px] bg-[#87deff] border-[3px] border-[#5AB5E8] rounded-xl flex flex-col justify-end p-6 sm:p-10 rotate-[1deg] lg:rotate-[2deg] hover:rotate-0 transition-transform duration-300 z-30"
                     style={{ fontFamily: '"Inter", sans-serif' }}
                 >
                     {/* لیبل Figma */}
@@ -61,12 +61,12 @@ export default function WhatIDoSection() {
 
                 {/* کارت صورتی */}
                 <div
-                    className="relative shrink-0 w-full max-w-[377px] h-[380px] sm:h-[452px] bg-[#ffbbf0] border-[3px] border-[#F384D4] rounded-xl flex flex-col justify-end p-6 sm:p-10 rotate-0 lg:rotate-[5deg] hover:rotate-0 transition-transform duration-300 z-20"
+                    className="relative shrink-0 w-full max-w-[377px] h-[380px] sm:h-[452px] bg-[#ffbbf0] border-[3px] border-[#F384D4] rounded-xl flex flex-col justify-end p-6 sm:p-10 rotate-[2deg] lg:rotate-[5deg] hover:rotate-0 transition-transform duration-300 z-20"
                     style={{ fontFamily: '"Inter", sans-serif' }}
                 >
                     {/* لیبل Figma Prototype */}
                     <div
-                        className="absolute top-[100px] right-0 sm:-right-[60px] bg-[#fce577] px-3 py-1 text-black z-40"
+                        className="absolute top-[100px] right-2 sm:-right-[60px] bg-[#fce577] px-3 py-1 text-black z-40"
                         style={{ fontFamily: '"Handlee", cursive', fontSize: '18px' }}
                     >
                         Figma Prototype
